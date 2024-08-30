@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Favela</title>
+</head>
+
+<body>
+    <h1></h1>
+    <p></p>
+
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr><td>100</td><td>Dog quente</td><td>R$ 9.80</td></tr>
+        <tr><td>101</td><td>Bauruzim Simples</td><td>R$ 5.60</td></tr>
+        <tr><td>102</td><td>Bauruzim com ovo</td><td>R$ 7.20</td></tr>
+        <tr><td>103</td><td>Hambúrguera</td><td>R$ 12.30</td></tr>
+        <tr><td>104</td><td>Cheeseburguer</td><td>R$ 16.90</td></tr>
+    </table>
+
+
+    <h2> Fazer Pedido </h2>
+    <label for="pedidoCliente">Digite o codigo do produto </label>
+    <input type="text" id="pedidoCliente"> <br>
+    <label for="qtd"> Quantidade:</label>
+    <select id="qtd">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select> <br>
+    <button onclick="pedidoCliente()">Adicionar Item</button>
+    <button onclick="visualizarCarrinho()">Visualizar Carrinho</button>
+    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+
+    <h2 id="guiaPedido">Pedido :</h2>
+
+     <h3 id="carrinhoCompras">  </h3>
+
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
